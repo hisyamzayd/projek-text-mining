@@ -1,0 +1,71 @@
+DATA UJI : 
+MA menyunat hukuman Idrus Marham dari 5 tahun 
+penjara menjadi 2 tahun penjara dalam kasus 
+korupsi. ironis!
+
+KELAS DATA UJI : 
+Korupsi
+------------------------------------------------------------------------------
+HASIL COSINE : 
+
+dengan K = 3 :
+    Nilai K = 3, hasil crop data : 
+    [['Korupsi', 12.332], ['Korupsi', 0.245], ['Korupsi', 0.245]]
+
+    Kelompokkan sesuai kelas, hasil :
+    [['Korupsi', 3]]
+    
+    Maka data uji termasuk kelas : Korupsi
+
+dengan K = 5 :
+    Nilai K = 5, hasil crop data : 
+    [['Korupsi', 12.332], ['Korupsi', 0.245], ['Korupsi', 0.245], 
+    ['Korupsi', 0.245], ['Korupsi', 0.245]]
+
+    Kelompokkan sesuai kelas, hasil :
+    [['Korupsi', 5]]
+    
+    Maka data uji termasuk kelas : Korupsi
+
+dengan K = 7 :
+    Nilai K = 7, hasil crop data : 
+    [['Korupsi', 12.332], ['Korupsi', 0.245], ['Korupsi', 0.245], 
+    ['Korupsi', 0.245], ['Korupsi', 0.245], ['Korupsi', 0.245], 
+    ['Korupsi', 0]]
+
+    Kelompokkan sesuai kelas, hasil :
+    [['Korupsi', 7]]
+
+    Maka data uji termasuk kelas : Korupsi
+------------------------------------------------------------------------------
+HASIL EUCLIDIAN : 
+
+dengan K = 3 :
+    Nilai K = 3, hasil crop data : 
+    [['Korupsi', 3.501], ['MotorListrik', 3.501], ['Populasi', 4.028]]
+    
+    Kelompokkan sesuai kelas, hasil :
+    [['Korupsi', 1], ['MotorListrik', 1], ['Populasi', 1]]
+    
+    Maka data uji termasuk kelas : Korupsi
+
+dengan K = 5 :
+    Nilai K = 5, hasil crop data : 
+    [['Korupsi', 3.501], ['MotorListrik', 3.501], ['Populasi', 4.028], 
+    ['Korupsi', 5.052], ['Populasi', 5.165]]
+    
+    Kelompokkan sesuai kelas, hasil :
+    [['Korupsi', 2], ['Populasi', 2], ['MotorListrik', 1]]
+
+    Maka data uji termasuk kelas : Korupsi
+
+dengan K = 7 :
+    Nilai K = 7, hasil crop data : 
+    [['Korupsi', 3.501], ['MotorListrik', 3.501], ['Populasi', 4.028], 
+    ['Korupsi', 5.052], ['Populasi', 5.165], ['Populasi', 5.305], 
+    ['Populasi', 5.444]]
+
+    Kelompokkan sesuai kelas, hasil :
+    [['Populasi', 4], ['Korupsi', 2], ['MotorListrik', 1]]
+    
+    Maka data uji termasuk kelas : Populasi

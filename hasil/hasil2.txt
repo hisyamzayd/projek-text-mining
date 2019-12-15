@@ -1,0 +1,71 @@
+DATA UJI : 
+Presiden Joko Widodo memberikan grasi kepada 
+mantan Gubernur Riau Annas Maamun, yang terlibat
+kasus korupsi alihfungsi lahan.
+
+KELAS DATA UJI : 
+Korupsi
+------------------------------------------------------------------------------
+HASIL COSINE : 
+
+dengan K = 3 :
+    Nilai K = 3, hasil crop data : 
+    [['MotorListrik', 27.029], ['Korupsi', 12.258], ['MotorListrik', 12.013]]
+
+    Kelompokkan sesuai kelas, hasil :
+    [['MotorListrik', 2], ['Korupsi', 1]]
+
+    Maka data uji termasuk kelas : MotorListrik
+
+dengan K = 5 :
+    Nilai K = 5, hasil crop data : 
+    [['MotorListrik', 27.029], ['Korupsi', 12.258], ['MotorListrik', 12.013], 
+    ['MotorListrik', 3.003], ['Korupsi', 0.319]]
+
+    Kelompokkan sesuai kelas, hasil :
+    [['MotorListrik', 3], ['Korupsi', 2]]
+
+    Maka data uji termasuk kelas : MotorListrik
+
+dengan K = 7 :
+    Nilai K = 7, hasil crop data : 
+    [['MotorListrik', 27.029], ['Korupsi', 12.258], ['MotorListrik', 12.013], 
+    ['MotorListrik', 3.003], ['Korupsi', 0.319], ['Korupsi', 0.245], 
+    ['Korupsi', 0.245]]
+
+    Kelompokkan sesuai kelas, hasil :
+    [['Korupsi', 4], ['MotorListrik', 3]]
+
+    Maka data uji termasuk kelas : Korupsi
+------------------------------------------------------------------------------
+HASIL EUCLIDIAN : 
+
+dengan K = 3 :
+    Nilai K = 3, hasil crop data : 
+    [['Korupsi', 7.162], ['MotorListrik', 7.162], ['Populasi', 7.434]]
+
+    Kelompokkan sesuai kelas, hasil :
+    [['Korupsi', 1], ['MotorListrik', 1], ['Populasi', 1]]
+
+    Maka data uji termasuk kelas : Korupsi
+
+dengan K = 5 :
+    Nilai K = 5, hasil crop data : 
+    [['Korupsi', 7.162], ['MotorListrik', 7.162], ['Populasi', 7.434], 
+    ['Korupsi', 7.505], ['Korupsi', 8.035]]
+
+    Kelompokkan sesuai kelas, hasil :
+    [['Korupsi', 3], ['MotorListrik', 1], ['Populasi', 1]]
+
+    Maka data uji termasuk kelas : Korupsi
+
+dengan K = 7 :
+    Nilai K = 7, hasil crop data : 
+    [['Korupsi', 7.162], ['MotorListrik', 7.162], ['Populasi', 7.434], 
+    ['Korupsi', 7.505], ['Korupsi', 8.035], ['Populasi', 8.107], 
+    ['Populasi', 8.196]]
+
+    Kelompokkan sesuai kelas, hasil :
+    [['Korupsi', 3], ['Populasi', 3], ['MotorListrik', 1]]
+
+    Maka data uji termasuk kelas : Korupsi

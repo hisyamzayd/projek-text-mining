@@ -1,0 +1,71 @@
+DATA UJI :
+populasi harimau sumatra diperkirakan kurang 
+lebih 600 ekor, yang hidup di 23 kantong habitat, 
+termasuk yang hidup di lahan gambut
+
+KELAS DATA UJI :
+Populasi
+------------------------------------------------------------------------------
+HASIL COSINE :
+
+dengan K = 3 :
+    Nilai K = 3, hasil crop data : 
+    [['Populasi', 12.013], ['Korupsi', 0], ['Korupsi', 0]]
+
+    Kelompokkan sesuai kelas, hasil :
+    [['Korupsi', 2], ['Populasi', 1]]
+
+    Maka data uji termasuk kelas : Korupsi
+
+dengan K = 5 :
+    Nilai K = 5, hasil crop data : 
+    [['Populasi', 12.013], ['Korupsi', 0], ['Korupsi', 0], 
+    ['Korupsi', 0], ['Korupsi', 0]]
+
+    Kelompokkan sesuai kelas, hasil :
+    [['Korupsi', 4], ['Populasi', 1]]
+
+    Maka data uji termasuk kelas : Korupsi
+
+dengan K = 7 :
+    Nilai K = 7, hasil crop data : 
+    [['Populasi', 12.013], ['Korupsi', 0], ['Korupsi', 0], 
+    ['Korupsi', 0], ['Korupsi', 0], ['Korupsi', 0], 
+    ['Korupsi', 0]]
+
+    Kelompokkan sesuai kelas, hasil :
+    [['Korupsi', 6], ['Populasi', 1]]
+
+    Maka data uji termasuk kelas : Korupsi
+------------------------------------------------------------------------------
+HASIL EUCLIDIAN : 
+
+dengan K = 3 :
+    Nilai K = 3, hasil crop data : 
+    [['Korupsi', 3.466], ['MotorListrik', 3.466], ['Populasi', 3.997]]
+
+    Kelompokkan sesuai kelas, hasil :
+    [['Korupsi', 1], ['MotorListrik', 1], ['Populasi', 1]]
+
+    Maka data uji termasuk kelas : Korupsi
+
+dengan K = 5 :
+    Nilai K = 5, hasil crop data : 
+    [['Korupsi', 3.466], ['MotorListrik', 3.466], ['Populasi', 3.997], 
+    ['Populasi', 4.837], ['Korupsi', 5.077]]
+
+    Kelompokkan sesuai kelas, hasil :
+    [['Korupsi', 2], ['Populasi', 2], ['MotorListrik', 1]]
+
+    Maka data uji termasuk kelas : Korupsi
+
+dengan K = 7 :
+    Nilai K = 7, hasil crop data : 
+    [['Korupsi', 3.466], ['MotorListrik', 3.466], ['Populasi', 3.997], 
+    ['Populasi', 4.837], ['Korupsi', 5.077], ['Populasi', 5.142], 
+    ['Populasi', 5.281]]
+
+    Kelompokkan sesuai kelas, hasil :
+    [['Populasi', 4], ['Korupsi', 2], ['MotorListrik', 1]]
+
+    Maka data uji termasuk kelas : Populasi

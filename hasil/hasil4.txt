@@ -1,0 +1,70 @@
+DATA UJI :
+Menperin Punya 'Mimpi' 2 juta motor listrik 
+lahir di Indonesia 2025.
+
+KELAS DATA UJI :
+MotorListrik
+------------------------------------------------------------------------------
+HASIL COSINE :
+
+dengan K = 3 :
+    Nilai K = 3, hasil crop data :
+    [['MotorListrik', 0.752], ['Populasi', 0.591], ['MotorListrik', 0.457]]
+
+    Kelompokkan sesuai kelas, hasil :
+    [['MotorListrik', 2], ['Populasi', 1]]
+
+    Maka data uji termasuk kelas : MotorListrik
+
+dengan K = 5 :
+    Nilai K = 5, hasil crop data : 
+    [['MotorListrik', 0.752], ['Populasi', 0.591], ['MotorListrik', 0.457], 
+    ['Populasi', 0.454], ['MotorListrik', 0.418]]
+
+    Kelompokkan sesuai kelas, hasil :
+    [['MotorListrik', 3], ['Populasi', 2]]
+    
+    Maka data uji termasuk kelas : MotorListrik
+
+dengan K = 7 :
+    Nilai K = 7, hasil crop data :
+    [['MotorListrik', 0.752], ['Populasi', 0.591], ['MotorListrik', 0.457], 
+    ['Populasi', 0.454], ['MotorListrik', 0.418], ['MotorListrik', 0.418], 
+    ['MotorListrik', 0.418]]
+
+    Kelompokkan sesuai kelas, hasil :
+    [['MotorListrik', 5], ['Populasi', 2]]
+
+    Maka data uji termasuk kelas : MotorListrik
+------------------------------------------------------------------------------
+HASIL EUCLIDIAN : 
+
+dengan K = 3 :
+    Nilai K = 3, hasil crop data : 
+    [['Korupsi', 0.934], ['MotorListrik', 0.934], ['Populasi', 1.982]]
+
+    Kelompokkan sesuai kelas, hasil :
+    [['Korupsi', 1], ['MotorListrik', 1], ['Populasi', 1]]
+    
+    Maka data uji termasuk kelas : Korupsi
+
+dengan K = 5 :
+    Nilai K = 5, hasil crop data : 
+    [['Korupsi', 0.934], ['MotorListrik', 0.934], ['Populasi', 1.982], 
+    ['Korupsi', 3.825], ['Populasi', 3.88]]
+
+    Kelompokkan sesuai kelas, hasil :
+    [['Korupsi', 2], ['Populasi', 2], ['MotorListrik', 1]]
+
+    Maka data uji termasuk kelas : Korupsi
+
+dengan K = 7 :
+    Nilai K = 7, hasil crop data : 
+    [['Korupsi', 0.934], ['MotorListrik', 0.934], ['Populasi', 1.982], 
+    ['Korupsi', 3.825], ['Populasi', 3.88], ['Populasi', 4.011], 
+    ['Populasi', 4.231]]
+
+    Kelompokkan sesuai kelas, hasil :
+    [['Populasi', 4], ['Korupsi', 2], ['MotorListrik', 1]]
+
+    Maka data uji termasuk kelas : Populasi

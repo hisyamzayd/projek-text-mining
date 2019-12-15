@@ -1,0 +1,1 @@
+#isi dengan masing-masing data uji pada folder data_uji
