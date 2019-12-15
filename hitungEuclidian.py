@@ -1,8 +1,8 @@
-# coding: utf-8
 import xlrd
 import math
 
-#Get xlsx file, turn into array
+#Mengambil file "tf-idf-with-data-uji.xlsx" kemudian 
+#diubah menjadi array dalam python
 def prepareDoc(nama_file) :
     excelWorkBook = xlrd.open_workbook(nama_file)
     sheet = excelWorkBook.sheet_by_index(0)
@@ -29,6 +29,8 @@ def prepareDoc(nama_file) :
     
     return result
 
+#Menghitung nilai euclidian dari dokumen uji dengan 
+#setiap dokumen latih
 def hitungEuclidian(dokumen) :
     dataUji = dokumen[len(dokumen)-1][1]
     result = []
@@ -50,6 +52,8 @@ def hitungEuclidian(dokumen) :
     
     return result
 
+#Mengurutkan hasil dokumen dengan 
+#nilai terkecil ke nilai terbesar
 def minmaxEuclidian(dokumen) :
     check = True
     while check :
@@ -66,12 +70,15 @@ def minmaxEuclidian(dokumen) :
     
     return dokumen
 
+#Mengambil k dokumen
 def cropWithK(dokumen, nilai_k) :
     result = []
     for i in range(nilai_k) :
         result.append([dokumen[i][0], dokumen[i][1]])
     return result
 
+#Menggabungkan dokumen dengan kelas yang sama
+#kemudian diurutkan dengan kemunculan terbanyak
 def findBestClass(dokumen) :
     #list all class
     allClasses = []
@@ -88,7 +95,7 @@ def findBestClass(dokumen) :
                 value += 1
         valueClasses.append(value)
 
-    #combine
+    #combine dokumen dengan kelas yang sama
     result = []
     for index, item in enumerate(allClasses) :
         result.append([allClasses[index], valueClasses[index]])
@@ -109,13 +116,14 @@ def findBestClass(dokumen) :
     
     return result
 
+#Fungsi menghitung nilai euclidian secara keseluruhan
 def hitungEuclidianAll(nama_file) :
     idf_and_uji_data = prepareDoc(nama_file)
     hasil_euclidian = hitungEuclidian(idf_and_uji_data)
     hasil_min_max = minmaxEuclidian(hasil_euclidian)
-    hasil_crop = cropWithK(hasil_min_max, 7)
+    hasil_crop = cropWithK(hasil_min_max, 3)
     hasil_find_best = findBestClass(hasil_crop)
-    print("Nilai K = 7, hasil crop data : ")
+    print("Nilai K = 3, hasil crop data : ")
     print(hasil_crop)
     print()
     print("Kelompokkan sesuai kelas, hasil :")

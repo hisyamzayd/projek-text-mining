@@ -26,3 +26,9 @@ HOW TO RUN :
 program
 
 6. Jalankan sesuai urutan dari nomor 1 s.d. 3
+---------------------------------------------------------------------
+NB :
+
+1. Seluruh data uji terletak dalam folder data_uji.
+
+2. Seluruh hasil eksekusi file "preDataUji.py" untuk masing-masing data uji terletak dalam folder tf-idf-with-data-uji

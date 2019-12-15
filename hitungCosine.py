@@ -1,7 +1,7 @@
-# coding: utf-8
 import xlrd
 
-#Get xlsx file, turn into array
+#Mengambil file "tf-idf-with-data-uji.xlsx" kemudian 
+#diubah menjadi array dalam python
 def prepareDoc(nama_file) :
     excelWorkBook = xlrd.open_workbook(nama_file)
     sheet = excelWorkBook.sheet_by_index(0)
@@ -28,6 +28,8 @@ def prepareDoc(nama_file) :
     
     return result
 
+#Menghitung nilai cosine dari dokumen uji dengan 
+#setiap dokumen latih
 def hitungCosine(dokumen) :
     dataUji = dokumen[len(dokumen)-1][1]
     result = []
@@ -47,6 +49,8 @@ def hitungCosine(dokumen) :
     
     return result
 
+#Mengurutkan hasil dokumen dengan 
+#nilai terbesar ke nilai terkecil
 def minmaxCosine(dokumen) :
     check = True
     while check :
@@ -63,12 +67,15 @@ def minmaxCosine(dokumen) :
     
     return dokumen
 
+#Mengambil k dokumen
 def cropWithK(dokumen, nilai_k) :
     result = []
     for i in range(nilai_k) :
         result.append([dokumen[i][0], dokumen[i][1]])
     return result
 
+#Menggabungkan dokumen dengan kelas yang sama
+#kemudian diurutkan dengan kemunculan terbanyak
 def findBestClass(dokumen) :
     #list all class
     allClasses = []
@@ -85,7 +92,7 @@ def findBestClass(dokumen) :
                 value += 1
         valueClasses.append(value)
 
-    #combine
+    #combine dokumen dengan kelas yang sama
     result = []
     for index, item in enumerate(allClasses) :
         result.append([allClasses[index], valueClasses[index]])
@@ -106,6 +113,7 @@ def findBestClass(dokumen) :
     
     return result
 
+#Fungsi menghitung nilai cosine secara keseluruhan
 def hitungCosineAll(nama_file) :
     idf_and_uji_data = prepareDoc(nama_file)
     hasil_cosine = hitungCosine(idf_and_uji_data)
